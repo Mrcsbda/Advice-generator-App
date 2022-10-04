@@ -1,13 +1,12 @@
 <article class="card-container">
   <section class="card">
-    <h1>ADVICE #119</h1>
+    <h1>ADVICE #{{advices?.id}}</h1>
     <p>
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nesciunt
-      laborum vel sit praesentium sapiente."
+      "{{advices?.advice}}"
     </p>
     <img class="pattern-divider-mobile" src="../assets/images/pattern-divider-mobile.svg" alt="">
     <img class="pattern-divider-desktop" src="../assets/images/pattern-divider-desktop.svg" alt="">
-    <div class="icon-dice-container">
+    <div class="icon-dice-container" (click)="newAdvice()">
       <img src="../assets/images/icon-dice.svg" alt="">
     </div>
   </section>
