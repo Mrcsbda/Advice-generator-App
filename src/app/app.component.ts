@@ -25,7 +25,6 @@ export class AppComponent implements OnInit {
 
   newAdvice(){
     this.getAdvices();
-    console.log('hola')
   }
 }
 
