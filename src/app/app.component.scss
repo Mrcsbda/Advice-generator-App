@@ -1,0 +1,92 @@
+$Manrope: "Manrope", sans-serif;
+$NeonGreen: hsl(150, 100%, 66%);
+
+.card-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(218, 23%, 16%);
+
+  .card {
+    width: 90%;
+    padding: 30px;
+    position: relative;
+    border-radius: 15px;
+    background-color: hsl(217, 19%, 24%);
+
+    h1 {
+      font-weight: 600;
+      margin: 27px 0px;
+      color: $NeonGreen;
+      font-size: 0.8rem;
+      text-align: center;
+      letter-spacing: 4px;
+      font-family: $Manrope;
+    }
+
+    p {
+      font-weight: 800;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 35px;
+      font-family: $Manrope;
+      color: hsl(193, 38%, 86%);
+    }
+
+    .pattern-divider-mobile {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .pattern-divider-desktop {
+      display: none;
+    }
+
+    .icon-dice-container {
+      top: 90%;
+      left: 41%;
+      display: flex;
+      padding: 20px;
+      position: absolute;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      background-color: $NeonGreen;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .card-container {
+    .card {
+      width: 34%;
+      padding: 50px;
+
+      h1 {
+        margin: 0px 0px 30px 0px;
+        font-size: 0.9rem;
+      }
+
+      .pattern-divider-mobile {
+        display: none;
+      }
+
+      .pattern-divider-desktop {
+        width: 100%;
+        display: inline;
+        margin-bottom: 20px;
+      }
+
+      .icon-dice-container {
+        left: 45%;
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0px 0px 35px $NeonGreen;
+        }
+      }
+    }
+  }
+}
